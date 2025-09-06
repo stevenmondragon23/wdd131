@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -17,13 +19,13 @@ body {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between; /* separa cada li */
+  justify-content: space-between; 
   padding: 0.5rem 2rem;
 }
 
 nav li {
-  flex: 1; /* opcional: cada li ocupa mismo espacio */
-  text-align: center; /* centra el texto dentro de cada li */
+  flex: 1; 
+  text-align: center; 
 }
 
 
