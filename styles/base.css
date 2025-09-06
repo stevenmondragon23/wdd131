@@ -20,7 +20,7 @@ body {
 }
 
 /*  Header */
-header h1 span {
+header h1 {
     display: block;
     text-align: center;
     font-size: 1.8rem;
