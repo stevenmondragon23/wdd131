@@ -22,7 +22,6 @@ body {
 /*  Header */
 header h1 span {
     display: block;
-    /* Paso 3 */
     text-align: center;
     font-size: 1.8rem;
     color: var(--primary-color);
