@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbum del Templo</title>
+  <!-- CSS principal (mobile first) -->
+  <link rel="stylesheet" href="temples.css">
+  <!-- CSS para pantallas grandes -->
+  <link rel="stylesheet" href="temples-large.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+  <header>
+    <h1>Álbum del Templo</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Hogar</a></li>
+        <li><a href="#">Viejo</a></li>
+        <li><a href="#">Nuevo</a></li>
+        <li><a href="#">Grande</a></li>
+        <li><a href="#">Pequeño</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="gallery-title">Galería de Templos</h2>
+
+    <!-- 9 figuras con placeholder -->
+     <section class="gallery">
+        <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Templo 1">
+        <figcaption>Templo 1</figcaption>
+        </figure>
+
+        <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Templo 2">
+        <figcaption>Templo 2</figcaption>
+        </figure>
+
+        <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Templo 3">
+        <figcaption>Templo 3</figcaption>
+        </figure>
+
+        <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Templo 4">
+        <figcaption>Templo 4</figcaption>
+        </figure>
+
+        <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Templo 5">
+        <figcaption>Templo 5</figcaption>
+        </figure>
+
+        <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Templo 6">
+        <figcaption>Templo 6</figcaption>
+        </figure>
+
+        <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Templo 7">
+        <figcaption>Templo 7</figcaption>
+        </figure>
+
+        <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Templo 8">
+        <figcaption>Templo 8</figcaption>
+        </figure>
+
+        <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Templo 9">
+        <figcaption>Templo 9</figcaption>
+        </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Álbum del Templo</p>
+    <p>Última actualización: <span id="lastModified"></span></p>
+  </footer>
+
+  <!-- Script diferido -->
+  <script src="temples.js" defer></script>
+</body>
+</html>
