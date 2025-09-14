@@ -1,4 +1,3 @@
-/* Importa tus fuentes de Google */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400;700&display=swap');
 
 :root {
@@ -29,7 +28,15 @@ header {
   background-color: var(--primary-color);
   color: white;
   padding: 1rem;
-  text-align: center;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* título a la izquierda, menú a la derecha */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: blue;
 }
 
 header h1 {
@@ -38,25 +45,46 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-/* NAV con Flex */
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-nav a {
-  text-decoration: none;
+/* ---------- MENÚ HAMBURGUESA MOBILE ---------- */
+#menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 2rem;
   color: white;
-  font-weight: 600;
-  padding: 0.5rem 0.8rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-nav a:hover {
-  background-color: var(--secondary-color);
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 150px;
+}
+
+#nav-menu li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#nav-menu li a:hover {
+  background-color: #ddd;
+}
+
+/* Mostrar menú al hacer clic */
+#nav-menu.show {
+  display: flex;
 }
 
 /* ---------- MAIN ---------- */
@@ -66,18 +94,14 @@ main {
 }
 
 .gallery-title {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: var(--primary-color);
-    border-bottom: 3px solid var(--secondary-color);
-    padding-bottom: 0.3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.3rem;
 }
-
-
-
-
 
 .gallery {
   display: grid;
@@ -85,8 +109,7 @@ main {
   gap: 15px;
 }
 
-
-.galerry img {
+.gallery img {
   width: 100%;
   border-radius: 8px;
 }
@@ -124,4 +147,31 @@ footer {
 
 footer p {
   margin: 0.2rem 0;
+}
+
+/* ---------- MEDIA QUERY PARA DESKTOP ---------- */
+@media screen and (min-width: 801px) {
+  #menu-btn {
+    display: none; /* ocultar botón en desktop */
+  }
+
+  #nav-menu {
+    display: flex;       /* menú siempre visible en desktop */
+    flex-direction: row;
+    position: static;
+    background: none;
+    border: none;
+    width: auto;
+    gap: 1rem;
+  }
+
+  #nav-menu li a {
+    color: white;
+    padding: 0.5rem 0.8rem;
+  }
+
+  #nav-menu li a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+  }
 }
