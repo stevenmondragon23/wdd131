@@ -24,6 +24,3 @@ function calculateWindChill(tempC, windKmh) {
 const windChillValue = calculateWindChill(temperature, windSpeed);
 document.getElementById("wind-chill").textContent =
     windChillValue === "N/A" ? "N/A" : `${windChillValue} °C`;
-
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("last-modified").textContent = document.lastModified;

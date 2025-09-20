@@ -49,6 +49,6 @@
         display: inline-block; /* Mostrar ícono SVG en móvil */
         width: 24px;
         height: 24px;
-        background: url('../assets/weather-icon.svg') no-repeat center / contain;
+        background: url('../images/weather-icon.svg') no-repeat center / contain;
     }
 }
