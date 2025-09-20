@@ -65,7 +65,7 @@ picture img {
 /* Footer */
 footer {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: white;
     padding: 15px;
     text-align: center;
     font-size: 0.9em;
