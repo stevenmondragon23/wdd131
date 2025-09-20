@@ -72,20 +72,30 @@ footer {
     margin-top: 40px;
 }
 
-/* Pseudo elemento para el icono en escritorio */
-#weather h2::after {
-    content: " ⛅";
-    margin-left: 0.5em;
-    display: inline-block;
-}
-
-/* Ocultar ícono SVG en escritorio */
 #weather-icon {
-    display: none;
+  display: none; 
 }
 
-@media (min-width: 600px) {
-  #weather {
-    margin-top: 230px; /* Ajusta la distancia aquí */
+#weather h2::after {
+  content: " ⛅";   
+  margin-left: 0.5em;
+  display: inline-block;
+}
+
+@media (max-width: 599px) {
+  #weather-icon {
+    display: inline-block; 
+    width: 50px;
+    height: auto;
+  }
+
+  #weather-icon img {
+    width: 45px;
+    height: auto;
+    display: block;
+  }
+
+  #weather h2::after {
+    content: "";
   }
 }
