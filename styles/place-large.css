@@ -1,0 +1,53 @@
+@media (min-width: 600px) {
+    main {
+        padding: 0;
+    }
+
+    /* Posicionar las cajas info al lado de la imagen */
+    .info-box {
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 280px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 10;
+    }
+
+    /* Caja de datos a la izquierda */
+    #data {
+        left: 20px;
+    }
+
+    /* Caja de clima a la derecha */
+    #weather {
+        right: 20px;
+    }
+
+    /* Mostrar emoticón SVG en móvil, oculto en escritorio (ya en base) */
+    #weather-icon {
+        display: none;
+    }
+}
+
+/* Ajustes para pantallas menores a 600px */
+@media (max-width: 599px) {
+    header {
+        text-align: center;
+    }
+
+    .info-box {
+        padding: 10px;
+    }
+
+    #weather-icon {
+        font-size: 1.5em;
+        display: inline-block; /* Mostrar ícono SVG en móvil */
+        width: 24px;
+        height: 24px;
+        background: url('../assets/weather-icon.svg') no-repeat center / contain;
+    }
+}

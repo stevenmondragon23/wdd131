@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #c8102e; /* Rojo Madagascar */
+    --secondary-color: #ffffff;
+    --font-family: 'Arial', sans-serif;
+    --green-color: #006442; /* Verde bandera Madagascar */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 70px;
+}
+
+main {
+    position: relative;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Cajas info */
+.info-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    margin-top: 1px;
+    position: static; 
+}
+
+/* Cabecera de las cajas */
+.info-box h2 {
+    margin-top: 0;
+    color: var(--green-color);
+}
+
+/* Estilo texto en negrita */
+.info-box p strong {
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* Pseudo elemento para el icono en escritorio */
+#weather h2::after {
+    content: " ⛅";
+    margin-left: 0.5em;
+    display: inline-block;
+}
+
+/* Ocultar ícono SVG en escritorio */
+#weather-icon {
+    display: none;
+}
+
+@media (min-width: 600px) {
+  #weather {
+    margin-top: 230px; /* Ajusta la distancia aquí */
+  }
+}

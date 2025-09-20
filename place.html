@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Piura - Place description</title>
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1 id="place-title">PIURA</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/hero-image-piura.webp" media="(min-width: 600px)" type="image/webp" />
+            <source srcset="images/responsive-hero-image-piura.webp" media="(max-width: 599px)" type="image/webp" />
+            <img src="images/bandera-peru.webp" alt="Vista panorámica del lugar" loading="lazy" />
+        </picture>
+
+        <section id="data" class="info-box">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 1,285,216 sq km</p>
+            <p><strong>Population:</strong> 33,500,000</p>
+            <p><strong>Capital:</strong> Lima</p>
+            <p><strong>Languages:</strong> Spanish, Quechua, Aymara</p>
+            <p><strong>Currency:</strong> Peruvian Sol (PEN)</p>
+            <p><strong>Time Zone:</strong> UTC−5</p>
+            <p><strong>Calling Code:</strong> +51</p>
+            <p><strong>Internet TLD:</strong> .pe</p>
+        </section>
+
+        <section id="weather" class="info-box">
+            <h2>Weather<span id="weather-icon">⛅</span></h2>
+            <p><strong>Temperature:</strong> <span id="temperature">20</span> °C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind-speed">12</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span> 🎶 Steven Mondragon <br />
+            Perú<br />
+            Last Modification: <span id="last-modified"></span>
+        </p>
+        </footer>
+</body>
+</html>
