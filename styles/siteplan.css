@@ -1,0 +1,83 @@
+:root {
+  /* 🎨 Colores principales */
+  --color-primary: #6A0DAD;      /* Purple */
+  --color-primary-light: #9F55E7;
+  --color-primary-dark: #3D005D;
+
+  /* 🎯 Complementario */
+  --color-accent: #FFD700;       /* Golden Yellow */
+
+  /* ⚖️ Neutros */
+  --color-neutral-light: #F5F5F5;
+  --color-neutral-medium: #B0B0B0;
+  --color-neutral-dark: #333333;
+}
+
+/* General */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--color-neutral-light);
+  color: var(--color-neutral-dark);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--color-primary-dark);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: var(--color-accent);
+}
+
+/* Sections */
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-left: 6px solid var(--color-primary-light);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Section headings */
+section h2 {
+  color: var(--color-primary);
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+/* Lists */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Highlight class */
+.highlight {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-neutral-medium);
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid var(--color-neutral-medium);
+}
