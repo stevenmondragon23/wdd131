@@ -4,8 +4,8 @@
   --color-primary-light: #9F55E7;
   --color-primary-dark: #3D005D;
 
-  /* 🎯 Complementario */
-  --color-accent: #FFD700;       /* Golden Yellow */
+  /* aditionals */
+  --color-accent: #ffd700;       /* Golden Yellow */
 
   /* ⚖️ Neutros */
   --color-neutral-light: #F5F5F5;
@@ -88,6 +88,7 @@ ul li {
 .highlight {
   color: var(--color-accent);
   font-weight: bold;
+  background-color: black;
 }
 
 /* Footer */
