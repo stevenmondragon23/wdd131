@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Product review form to submit product feedback." />
-    <meta name="author" content="Steven Mondragon" />
-    <title>Product Review Form</title>
-    <link rel="stylesheet" href="styles/form.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Product review form to submit product feedback.">
+  <meta name="author" content="Steven Mondragon">
+  <title>Product Review Form</title>
+  
+  <!-- Google Fonts: Arial no se importa, es sistema, así que está bien -->
+  <link rel="stylesheet" href="styles/form.css">
 
 </head>
 <body>
@@ -25,39 +27,43 @@
       <fieldset class="form-group" aria-required="true">
         <legend>Overall Rating <span class="required">*</span></legend>
         <div class="rating">
-          <input type="radio" id="star5" name="rating" value="5" required />
+          <input type="radio" id="star5" name="rating" value="5" required>
           <label for="star5" title="5 stars">☆</label>
 
-          <input type="radio" id="star4" name="rating" value="4" />
+          <input type="radio" id="star4" name="rating" value="4">
           <label for="star4" title="4 stars">☆</label>
 
-          <input type="radio" id="star3" name="rating" value="3" />
+          <input type="radio" id="star3" name="rating" value="3">
           <label for="star3" title="3 stars">☆</label>
 
-          <input type="radio" id="star2" name="rating" value="2" />
+          <input type="radio" id="star2" name="rating" value="2">
           <label for="star2" title="2 stars">☆</label>
 
-          <input type="radio" id="star1" name="rating" value="1" />
+          <input type="radio" id="star1" name="rating" value="1">
           <label for="star1" title="1 star">☆</label>
         </div>
       </fieldset>
 
       <div class="form-group">
         <label for="installDate">Date of Installation <span class="required">*</span></label>
-        <input type="date" id="installDate" name="installDate" required />
+        <input type="date" id="installDate" name="installDate" required>
       </div>
 
       <fieldset class="form-group">
         <legend>Useful Features (check all that apply):</legend>
         <div class="checkbox-group">
-          <input type="checkbox" id="feature1" name="features" value="Feature1" />
+          <input type="checkbox" id="feature1" name="features" value="Feature1">
           <label for="feature1">Feature 1</label>
 
-          <input type="checkbox" id="feature2" name="features" value="Feature2" />
+          <input type="checkbox" id="feature2" name="features" value="Feature2">
           <label for="feature2">Feature 2</label>
 
-          <input type="checkbox" id="feature3" name="features" value="Feature3" />
+          <input type="checkbox" id="feature3" name="features" value="Feature3">
           <label for="feature3">Feature 3</label>
+
+          <!-- Agregué la cuarta checkbox que faltaba -->
+          <input type="checkbox" id="feature4" name="features" value="Feature4">
+          <label for="feature4">Feature 4</label>
         </div>
       </fieldset>
 
@@ -68,21 +74,22 @@
 
       <div class="form-group">
         <label for="userName">Your Name (optional):</label>
-        <input type="text" id="userName" name="userName" placeholder="Enter your name" />
+        <input type="text" id="userName" name="userName" placeholder="Enter your name">
       </div>
 
       <div class="form-group">
-        <input type="submit" value="Submit Review" />
+        <input type="submit" value="Submit Review">
       </div>
     </form>
   </main>
-    <footer>
+
   <footer>
     <p>&copy; <span id="currentyear"></span> 🎶Steven Mondragon🎶</p>
     <p>Last Change: <span id="lastModified"></span></p>
   </footer>
-    </footer>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/products.js"></script>
+
+  <script src="scripts/getdates.js"></script>
+  <script src="scripts/products.js"></script>
+
 </body>
 </html>
