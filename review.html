@@ -6,9 +6,9 @@
     <meta name="description" content="Product review confirmation page." />
     <meta name="author" content="Steven Mondragon" />
     <title>Review Confirmation</title>
+    <!-- Google Fonts Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/form.css" />
-
-
 </head>
 <body>
   <header>
@@ -18,21 +18,19 @@
     <p>Your review was submitted successfully.</p>
     <p>You have submitted <span id="counter">0</span> reviews.</p>
     <a href="form.html">Submit another review</a>
-    <link rel="stylesheet" href="styles/form.css" />
-    <script src="scripts/products.js"></script>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🎶Steven Mondragon🎶</p>
+    <p>Last Change: <span id="lastModified"></span></p>
+  </footer>
 
-    </main>
-    <footer>
-        <p>&copy; <span id="currentyear"></span> 🎶Steven Mondragon🎶</p>
-        <p>Last Change: <span id="lastModified"></span></p>
-    </footer>
-
-    <script>
-        let count = localStorage.getItem('reviewCount') || 0;
-        count++;
-        localStorage.setItem('reviewCount', count);
-        document.getElementById('counter').textContent = count;
-    </script>
-    <script src="scripts/getdates.js"></script>
+  <script>
+    let count = localStorage.getItem('reviewCount') || 0;
+    count++;
+    localStorage.setItem('reviewCount', count);
+    document.getElementById('counter').textContent = count;
+  </script>
+  <script src="scripts/getdates.js"></script>
+  <script src="scripts/products.js"></script>
 </body>
 </html>

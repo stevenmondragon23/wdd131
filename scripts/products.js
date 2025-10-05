@@ -12,11 +12,4 @@ const productSelect = document.getElementById("productName");
 
 function populateProducts() {
   products.forEach(product => {
-    const option = document.createElement("option");
-    option.value = product.id;  // id as value
-    option.textContent = product.name; // name as displayed text
-    productSelect.appendChild(option);
-  });
-}
-
-populateProducts();
+   
