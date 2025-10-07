@@ -79,6 +79,10 @@ header{
 }
 
 
+
+
+
+
 /* MAIN */
 
 main{
@@ -90,7 +94,7 @@ main{
     height: 600px;             
     overflow: hidden;
     background-color: black;
-    position: absolute;
+    position: relative;
 
 }
 
@@ -98,6 +102,7 @@ main{
     display: block;
     width: 100%;
     height: 100%;
+    position: absolute;
     object-fit: cover;
     object-position: center 100%;
     opacity: 50%;
@@ -116,4 +121,85 @@ main{
     font-size: 4rem;
     opacity: 75%;
     padding: 14px 0px;
+}
+
+
+/*------------MAIN (SECOND SECTION -- RANKIN AND FORM)-----*/
+
+.middlepart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2px 4px;
+    position: relative;
+    margin: 5px;
+    gap : 10px;
+}
+
+.middlepart section{
+    background-color: var(--color-neutral-light);
+    border-radius: 6px;
+    border: 2px solid var(--color-neutral-dark);
+    opacity: 100%;
+    padding: 10px;
+}
+
+/*-----------------  RANKIN MAIN-------- */
+
+.rankin {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    
+}
+
+.rankin h2{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black
+}
+
+.rankin figure{
+    justify-self: center;
+    margin: 0 auto;
+    gap: 12px;
+    text-align: center;
+}
+
+.rankin img {
+    display: block;
+    width: 300px;
+    height: auto;
+    align-items: center;
+    padding: 0px 0px;
+    border-radius: 20px;
+    box-shadow: #ffd700;
+    border: 2px solid var(--color-primary-dark);
+}
+
+.rankin figcaption{
+    display: inline-block;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    padding: 10px 40px;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+/*---------------FORM MAIN ----------------*/
+
+.formulario h2{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black
+}
+
+
+.formulario form{
+    margin: 1px solid var(--color-accent);
 }
