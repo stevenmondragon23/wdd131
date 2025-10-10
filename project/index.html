@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/comicvault.css">
+    <link rel="stylesheet" href="../styles/comicvaul-small.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburguer.js" defer></script>
 </head>
 <body>
     
@@ -19,10 +22,11 @@
         <section class = "firtsheader">
             <img src="../images/comicvault-logo.jpg" alt="COMICVAULT LOGO">
             <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="dcpage.html">DC</a></li>
-                    <li><a href="marvelpage.html">MARVEL</a></li>
+                <button id="menu-btn">&#9776;</button>
+                <ul class="navigation" id="navigation">
+                    <li><a href="index.html" id="home">HOME</a></li>
+                    <li><a href="dcpage.html" id="dc">DC</a></li>
+                    <li><a href="marvelpage.html" id="marvel">MARVEL</a></li>
                 </ul>
             </nav>
         </section>
@@ -31,15 +35,20 @@
 
     <main>
         <section class="heropart">
-            <img src="../images/heroimage-comicvault.webp" alt="Hero Imgage">
-            <h1>COMICVAULT</h1>
+
+            <picture>
+                <source media="(max-width: 650px)" srcset="images/index-heroimage-small.webp">
+                <img src="../images/heroimage-comicvault.webp" alt="Hero Imgage">
+                
+            </picture>
+            <h1>COMIC<wbr>VAULT</h1>
         </section>
 
 
         <div class="middlepart">
             <section>
                 <h2>TOP 3 HEROES</h2>
-                <section class="rankin">
+                <div class="rankin">
 
                     <figure>
                     <img src="../images/Superman.webp" alt="Superman Image">
@@ -56,7 +65,7 @@
                     <figcaption>3.- FLASH</figcaption>
                     </figure>
 
-                </section>
+                </div>
                 
             </section>
 
@@ -104,6 +113,23 @@
     </main>
 
     <footer>
+        <div class="footerfirst">
+            <div class="wrapper">
+                <p>&copy; <span id="currentyear"></span> 🎶Steven Mondragon🎶</p>
+                <p>Last Change: <span id="lastModified"></span></p>
+            </div>
+        </div>
+
+
+        <div class="footersecond">
+            <a href=""> <img src="images/instagram-logo.svg" alt=""></a>
+            <a href=""> <img src="images/linkedin-logo.svg" alt=""></a>
+            <a href=""> <img src="images/facebook-logo.svg" alt=""></a>
+
+
+        </div>
+
+
 
     </footer>
 

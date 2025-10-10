@@ -1,0 +1,100 @@
+
+@media screen and (max-width: 920px)  {
+.middlepart {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.rankin {
+
+    padding: 30px 0px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    
+}
+}
+
+
+@media screen and (max-width:650px){
+
+
+#menu-btn {
+    margin: 30px 20px 10px auto;
+    display: block;
+    background: rgba(255, 255, 255, 0.767);
+    border: none;
+    font-size: 2rem;
+    color: #000000;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20%;
+}
+
+
+#navigation {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  gap: 0;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 100px;
+}
+
+#navigation li a {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.751);
+  font-size: small;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+#navigation li a:hover {
+  background-color: #06d31e;
+}
+
+
+#navigation.show {
+  display: flex;
+  z-index: 999;
+}
+
+
+
+
+
+
+
+/*FOOTER*/
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+
+}
+
+
+
+    .footersecond { 
+    margin: 0px;
+    justify-content: right;
+    padding: 0;
+
+}
+
+
+
+
+
+}
