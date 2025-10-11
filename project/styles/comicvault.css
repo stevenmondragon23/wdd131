@@ -80,6 +80,7 @@ header, footer{
     text-align: center;
     text-decoration: none;
     background-color: rgb(181, 126, 223);
+    box-shadow: 0px 2px 20px var(--color-neutral-medium);
 }
 
 
@@ -347,6 +348,94 @@ footer{
     width: 40px;
     height: auto;
     justify-content: center;
+}
+
+
+/*------HEROES LIST (DC AND MARVEL PAGE)-------------*/
+
+
+/* title */
+
+.heroeslist h1,h2 {
+    background-color: var(--color-neutral-light);
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+    font-size: 4rem;
+    box-shadow: 0x 2px 20px var(--color-neutral-medium);
+}
+
+
+
+
+
+
+/*NAV*/
+
+#heronav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+
+#heronav li{
+    background-color: var(--color-neutral-light);
+    border: 2px solid black;
+    box-shadow: 0px 2px 20px var(--color-neutral-medium);
+    
+}
+
+
+#heronav a{
+    padding: 10px 0px;
+    display: block;
+}
+
+
+#heronav li:hover{
+    background: var(--color-accent);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*ARRAY */
+.heroeslist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 1rem;
+}
+
+.heroeslist section{
+    background-color: var(--color-neutral-medium);
+    border: 2px solid var(--color-accent);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 10px var(--color-primary-dark);
+}
+
+.heroeslist img{
+    width: 55%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+
+.heroeslist p{
+    margin: 10px ;
 }
 
 

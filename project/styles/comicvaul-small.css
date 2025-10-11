@@ -70,6 +70,13 @@
 }
 
 
+/*HEROES LIST */
+
+.heroeslist {
+  grid-template-columns: 1fr;   /* por defecto: 1 columna (móvil) */
+  gap: 1rem;
+  padding: 1rem;
+}
 
 
 
