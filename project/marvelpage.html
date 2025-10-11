@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/comicvaul-small.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburguer.js" defer></script>
+    <script src="scripts/marvel-heroes-list.js" defer></script>
 </head>
     <body>
         <header>
@@ -36,7 +37,41 @@
                 </picture>
                 <h1>MARVEL</h1>
             </section>
-        </main>
+            <div class="herossection">
+                <h2>LIST OF HEROES</h2>
+            <nav>
+                <ul id="heronav" class="heronav">
+                    <li><a id="all">ALL</a></li>
+                    <li><a id = "old">OLDEST</a></li>
+                    <li><a id = "youngest">YOUNGEST</a></li>
+                    <li><a id = "powerful">POWERFUL</a></li>
+                    <li><a id = "weakest">WEAKEST</a></li>
+                </ul>
 
+
+            </nav>
+                <section class="heroeslist" id="marvelpart">
+                </section>
+
+
+            </div>
+        </main>
+        <footer>
+            <div class="footerfirst">
+                <div class="wrapper">
+                    <p>&copy; <span id="currentyear"></span> 🎶Steven Mondragon🎶</p>
+                    <p>Last Change: <span id="lastModified"></span></p>
+                </div>
+            </div>
+
+
+            <div class="footersecond">
+                <a href=""> <img src="images/instagram-logo.svg" alt=""></a>
+                <a href=""> <img src="images/linkedin-logo.svg" alt=""></a>
+                <a href=""> <img src="images/facebook-logo.svg" alt=""></a>
+
+
+            </div>
+        </footer>
     </body>
 </html>
