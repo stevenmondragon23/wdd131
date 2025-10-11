@@ -9,36 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/comicvault.css">
+    <link rel="stylesheet" href="styles/comicvault.css">
+    <link rel="stylesheet" href="styles/comicvaul-small.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburguer.js" defer></script>
 </head>
-<body>
-    
-    <header>
+    <body>
+        <header>
+            <section class = "firtsheader">
+                <img src="images/comicvault-logo.jpg" alt="COMICVAULT LOGO">
+                <nav>
+                    <button id="menu-btn">&#9776;</button>
+                    <ul class="navigation" id="navigation">
+                        <li><a href="index.html" id="home">HOME</a></li>
+                        <li><a href="dcpage.html" id="dc">DC</a></li>
+                        <li><a href="marvelpage.html" id="marvel">MARVEL</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section class="heropart">
+                <picture>
+                    <source media="(max-width: 650px)" srcset="images/index-heroimage-small.webp">
+                    <img src="images/heroimage-dc.webp" alt="Hero Imgage">
+                </picture>
+                <h1>DC<wbr> COMICS</h1>
+            </section>
+        </main>
 
-
-        <section class = "firtsheader">
-            <img src="../images/comicvault-logo.jpg" alt="COMICVAULT LOGO">
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="dcpage.html">DC</a></li>
-                    <li><a href="marvelpage.html">MARVEL</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-
-
-    <main>
-        <section class="heropart">
-            <img src="../images/heroimage-dc.webp" alt="Hero Imgage">
-            <h1>DC COMICS</h1>
-        </section>
-    </main>
-
-    <footer>
-
-    </footer>
-
-</body>
+    </body>
 </html>
