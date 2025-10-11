@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComicVault | WDD 131</title>
-    <meta name="desciption" content="">
+    <meta name="desciption" content="COMIC VAULT PRINCIPAL PAGE">
     <meta name="author" content="Steven Mondragon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/comicvaul-small.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburguer.js" defer></script>
+    <script src="scripts/thanksmessage.js" defer></script>
 </head>
 <body>
     
@@ -72,40 +73,45 @@
 
             <section class = "formulario">
                 <h2>Send us a message</h2>
-                <form action="">
+                <form id="submit-action">
 
                     <fieldset class="texts">
-                        <label for="GET-name">NAME</label>
+                        <label for="GET-name">NAME *</label>
                         <input id="GET-name" type="text" name="name" />
                     </fieldset>
 
                     <fieldset class="texts">
-                        <label for="GET-EMAIL">E-MAIL ADRESS</label>
-                        <input type="GET-EMAIL" type="text" name="email">
+                        <label for="GET-EMAIL">E-MAIL ADRESS *</label>
+                        <input id="GET-EMAIL" type="text" name="email">
                     </fieldset>
+
+
+
 
                     <fieldset class="radioptions">
-                        <legend>CHOOSE THE REASON:</legend>
+                        
+                        <legend>CHOOSE THE REASON: *</legend>
+                            <label for="opt1"><input type="radio" name="radio" id="opt1">ERROR WAS FOUND</label>
 
-
-                        <label for=""><input type="radio" name="radio">Radio</label>
-
-                        <label for=""><input type="radio" name="radio">Radio</label>
-
-                        <label for=""><input type="radio" name="radio">Radio</label>
+                            <label for="opt2"><input type="radio" name="radio" id="opt2">UPDATE INFORMATION</label>
+                            
+                            <label for="opt3"><input type="radio" name="radio" id="opt3">JOIN TO OUR TEAM</label>                  
 
                     </fieldset>
+
+
+
                     <fieldset class="squaretext">
-                        <label for="message">YOUR MESSAGE:</label>
-                        <textarea name="message" name="message" rows="5" cols="20"></textarea>
+                        <label for="message">WRITTEN REVIEW (OPTIONAL)</label>
+                        <textarea name="message" rows="5" cols="20" id="message"></textarea>
                     </fieldset>
 
                     <fieldset class="verification">
-                        <input type="checkbox">
-                        <label for="">CONFIRM</label>
+                        <input id="suscribe" type="checkbox">
+                        <label for="suscribe">Join the ComicVault newsletter.</label>
                     </fieldset>
 
-                    <button class="buttom" type="button">SUBMIT</button>
+                    <button class="buttom" type="submit" value="submit">SUBMIT</button>
 
                 </form>
             </section>
@@ -122,11 +128,9 @@
 
 
         <div class="footersecond">
-            <a href=""> <img src="images/instagram-logo.svg" alt=""></a>
-            <a href=""> <img src="images/linkedin-logo.svg" alt=""></a>
-            <a href=""> <img src="images/facebook-logo.svg" alt=""></a>
-
-
+            <a href="https://www.instagram.com/steven_mondra23/"> <img src="images/instagram-logo.svg" alt="instagram logo"></a>
+            <a href="https://www.linkedin.com/in/steven-mondra/"> <img src="images/linkedin-logo.svg" alt="linkdlin logo"></a>
+            <a href="https://www.facebook.com/mondragonflores10"> <img src="images/facebook-logo.svg" alt="facebook logo"></a>
         </div>
 
 
